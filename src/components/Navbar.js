@@ -1,20 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Navbarstyle.css';
 import { Link } from 'react-router-dom';
+import { MenuItems } from './MenuItem';
 
 function Navbar() {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <nav className="NavbarItems">
       <h1 className="navbar-logo">Trippy</h1>
-      <ul className="nav-menu">
+      <div className='menu-icons' onClick={handleClick}>
+        <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+      </div>
+      <ul className={clicked?"nav-menu-active":"nav-menu"}>
+        {MenuItems.map((item, index) => (
+          <li key={index}>
+            <Link to={item.url} className={item.cName}>
+              <i className={item.iconName}></i>
+              <span>{item.title}</span>
+            </Link>
+          </li>
+        ))}
         <li>
-          <Link to="/">
-            <i className="fas fa-home"></i> Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/about">
-            <i className="fas fa-info-circle"></i> About
-          </Link>
+          <button className='.nav-links-mobile'>Sign Up</button>
         </li>
       </ul>
     </nav>
