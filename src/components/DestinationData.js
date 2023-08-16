@@ -3,7 +3,7 @@ import React from 'react'
 
 function DestinationData(props) {
   return (
-    <div className={props.className}>
+    <div className='first-destination'>
              <div className='des-text'>
                 <h2>{props.heading}</h2>
                 <p>{props.text}</p>
