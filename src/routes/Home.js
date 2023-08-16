@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import heroImage  from '../assets/12.jpg'
+import Destination from '../components/Destination'
 function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ function Home() {
        url="/"
        btnClass="show"
        ></Hero>
+      <Destination></Destination>
     </>
   )
 }

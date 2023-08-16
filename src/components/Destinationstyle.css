@@ -1,0 +1,80 @@
+/* Apply styles to the destination section */
+.destination {
+    margin: 4rem 6rem;
+}
+
+/* Style for destination title */
+.destination h1 {
+    font-size: 3rem;
+}
+
+/* Style for the first destination */
+.first-destination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+/* Style for destination text */
+.des-text {
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+
+/* Style for destination sub-title */
+.des-text h2 {
+    padding-bottom: 1rem;
+}
+
+/* Style for images */
+.image {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99;
+}
+
+/* Style for individual images */
+.image img {
+    width: 49%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+/* Style for the second image */
+.image img:nth-child(2) {
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 850px) {
+    .destination {
+        margin: 2rem;
+    }
+
+    .first-destination {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .des-text, .image {
+        width: 100%;
+    }
+
+    .image img {
+        height: 250px;
+    }
+
+    .image img:nth-child(2) {
+        position: relative;
+        top: initial;
+        right: initial;
+    }
+}
