@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './HeroStyle.css';
 function Hero(props) {
   return (
     <div className={props.cName}>
@@ -7,7 +8,7 @@ function Hero(props) {
            <h1>{props.title}</h1>
            <p>{props.text}</p>
            <a href={props.url} className={props.btnClass}>
-            Travel Plan
+               {props.buttonText}
            </a>
       </div>
     </div>

@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
       title: 'Home',
-      url: '/home',
+      url: '/',
       cName:"nav-links",
       iconName: 'fas fa-home', // Correct Font Awesome icon class name
     },

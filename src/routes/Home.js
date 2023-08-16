@@ -11,7 +11,9 @@ function Home() {
        heroImage={heroImage}
        title="Your Journey your story"
        text="choose your favourite distination"
-
+       buttonText="Travel Plan"
+       url="/"
+       btnClass="show"
        ></Hero>
     </>
   )
