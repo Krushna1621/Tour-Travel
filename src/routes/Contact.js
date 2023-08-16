@@ -11,7 +11,6 @@ function Contact() {
        cName="hero-mid"
        heroImage={AboutImage}
        title="Contact"
-      
        btnClass="hide"
        ></Hero>
     </>
