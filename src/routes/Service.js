@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import ServiceImage from '../assets/img (1).jpg'
+import Footer from '../components/Footer';
+import Trip from '../components/Trip';
 function Service() {
   return (
     <>
@@ -13,6 +15,8 @@ function Service() {
       
        btnClass="hide"
        ></Hero>
+       <Trip></Trip>
+       <Footer></Footer>
     </>
   )
 }

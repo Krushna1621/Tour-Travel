@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import heroImage  from '../assets/12.jpg'
 import Destination from '../components/Destination'
 import Trip from '../components/Trip'
+import Footer from '../components/Footer'
 function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ function Home() {
        ></Hero>
       <Destination></Destination>
       <Trip></Trip>
+      <Footer></Footer>
     </>
   )
 }
